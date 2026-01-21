@@ -69,7 +69,7 @@ function App() {
     setSuccess(false)
 
     try {
-      const response = await fetch('/api/orders', {
+      const response = await fetch('https://e5lrpunjg2.execute-api.us-east-1.amazonaws.com/createorderapi/createorder', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
